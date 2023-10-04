@@ -1,0 +1,91 @@
+
+body{
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.container {
+    display: flex;
+    flex-direction: wrap; 
+    /* Ändern Sie flex-wrap zu flex-direction */
+    justify-content: center;
+    align-items: center; /* Zentrieren Sie die Karten vertikal */
+    padding: 20px;
+    height: 100vh;
+    min-height: 100vh; /* Mindesthöhe des Containers auf die volle Bildschirmhöhe setzen */
+}
+.container2 {
+    display: flex;
+    flex-direction: column;/* Ändern Sie flex-wrap zu flex-direction */
+    justify-content: center;
+
+    height: 100vh;
+}
+h1 {
+    color: #007bff;
+}
+
+h3 {
+    color: #007bff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    flex: 1;
+    overflow: hidden;
+    width: 200px; /* Breite der Karte anpassen */
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentrieren Sie den Inhalt der Karte horizontal */
+    justify-content: center; /* Zentrieren Sie den Inhalt der Karte vertikal */
+    text-align: center; /* Zentrieren Sie den Text horizontal */
+}
+
+.card:hover {
+    flex: 3;
+    transform: scale(1.05);
+}
+
+.card img {
+    object-fit: cover;
+    filter: grayscale(100%); /* Setzen Sie das Bild auf Schwarz-Weiß */
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px; /* Breite des Bildes anpassen */
+    height: 100px; /* Höhe des Bildes anpassen */
+    margin: 0 auto;
+    transition: filter 0.3s ease; /* Hinzufügen einer Übergangsanimation für den Filter */
+}
+
+.card:hover img {
+    filter: none; /* Entfernen Sie den Filter beim Hovern */
+}
+
+.card h1 {
+    font-size: 18px; /* Schriftgröße für den Titel (h1) ändern */
+    margin-top: 5px; /* Setzen Sie den Titel oben auf die Karte */
+}
+
+.card h3 {
+    font-size: 16px; /* Schriftgröße für den Untertitel (h3) ändern */
+    margin-top: 5px; /* Setzen Sie den Untertitel oben auf die Karte */
+}
+
+.card:last-child img {
+    height: auto; /* Das letzte Bild in der Kartenliste erhält eine automatische Höhe */
+}

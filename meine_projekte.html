@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meine Projekte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 14px 28px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #weiterleitungText {
+            font-size: 20px;
+            color: green;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Aktuelle Projekte</h2>
+        <p>QuizMasterProject mit c++ (10.2023)</p>
+        <p>Portfolio Webseite (09.2023)</p>
+
+        <button id="weiterleitung"><em><strong>Zurück zur Auswahl</strong></em></button>
+
+        <p id="weiterleitungText">Super! Klicken Sie auf Weiter</p>
+
+        <script>
+            document.getElementById("weiterleitung").addEventListener("click", function () {
+                // Hier navigieren Sie zur neuen Seite
+                window.location.href = "menu.html";
+            });
+        </script>
+    </div>
+</body>
+</html>

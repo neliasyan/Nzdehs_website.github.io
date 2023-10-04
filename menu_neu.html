@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auswahl</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        p {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .card {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Portfolio</h1>
+        <p> Hier können Sie auswählen, was Sie sich interessiert</p>
+        
+
+        
+        <!-- CV-Bild und Projekt-Bild mit Verlinkung -->
+        <div class="button-container">
+            <a href="ueber_mich.html" class="card">
+                <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1156909505251135508/cv.png?ex=6516af70&is=65155df0&hm=cc197b1808fb6fa27fbcf916f494299dace264f717b4a9082c05714fa9c61757&"
+                    alt="CV" />
+                <p>Über mich</p>
+            </a>
+            <a href="meine_projekte.html" class="card">
+                <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1156909505523748944/projekt.jpg?ex=6516af70&is=65155df0&hm=dfd014bbf091c534589df1837429e8ba5161540df62fcdb7dd5ffd0d5d72ca2a&"
+                    alt="Projekte" />
+                <p>Meine Projekte</p>
+            </a>
+            <a href="buecher.html" class="card">
+                <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157016225730277376/buch.png?ex=651712d4&is=6515c154&hm=4a5fffd19e2e1104e6e873fb71c8acfa36f2359c6859a0523b0314e71656b92d&"
+           alt="Bücher"/>
+           <p>Meine Bücher</p>
+            </a>
+            <a href = "kontak.html" class="card">
+                <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157016225315033178/kontakt.gif?ex=651712d4&is=6515c154&hm=93d0bd48329ea90fe8b69a8228c557e00b374f4727c0f5fafde08945fd03652b&"
+                alt ="Kontakt Daten" />
+                <P>Kontakt</P>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

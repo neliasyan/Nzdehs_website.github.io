@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auswahl</title>
+    <style>
+    body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            margin-top: 20px;
+            cursor: pointer; /* Fügt einen Mauszeiger hinzu, um anzuzeigen, dass der Text anklickbar ist */
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #fff;
+            cursor: pointer; /* Fügt einen Mauszeiger hinzu, um anzuzeigen, dass die Bilder anklickbar sind */
+        }
+
+        address {
+            font-style: normal;
+            font-size: 20px;
+            color: #333;
+            display: none; /* Versteckt die Adresse standardmäßig */
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+<head>
+    <title>Meine gelesene Bücher</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Meine gelesene Bücher</h1>
+        <p> Hier finden Sie die Bücher, welche ich schon gelesen habe</p>
+
+        <!-- Platzhalter für Buch 1 -->
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157026142172221500/6888606.jpg?ex=65171c10&is=6515ca90&hm=fafc4e8aadb72f30a34a6e5ea4e57734b843aad139ffbfcf350db66be431f948&" 
+            alt="woist" />
+            <p>"Who Moved my Cheese?" <P>
+              <p>  von Spencer Johnson</p>
+        </div>
+
+        <!-- Platzhalter für Buch 2 -->
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157027008765771907/poxir_kyand.png?ex=65171cdf&is=6515cb5f&hm=22b75cd488f1f0e93fd24f9b8b51f57e941e261ee784cc7d82838bf3a09101d2&"
+             alt="'Change your Life' " />
+            <p>"Change your Life" </P> 
+                <p>von Hrachya Manukyan</p>
+        </div>
+
+        <!-- Platzhalter für Buch 3 -->
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157026943963770930/kamqi_uj.png?ex=65171ccf&is=6515cb4f&hm=35e570ba8c0240d7a787010bd1ecc0d6e57d4082214c206966f02c8f9f08f837&" 
+            alt="'willpower'" />
+            <p>"Willpower" </p>
+                <P>von Hrachya Manukyan</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157029119519899741/big.JPG?ex=65171ed6&is=6515cd56&hm=e198ab7c1f621e5c23e55dae4400b58affcbf34984ead5b833e70856284fd204&" 
+            alt="'free'" />
+            <p>"Get rid of excesses and live peacefully" </p>
+                <P>von Hrachya Manukyan</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296091184775299/cafe.png?ex=65181779&is=6516c5f9&hm=7ef63fbd39f7aceffa34a3a4eff4add65e3738574bb63cdcd61499a8b7920da9&" 
+            alt="cafe" />
+            <p>"The cafe on the Edge of the world"</p>
+            <p> von John Strelecky</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296091734216734/tschick.png?ex=65181779&is=6516c5f9&hm=3d35b3703709cf917700c08556f2609796ff27cb0639b5d5157468bdb1263e63&" 
+            alt="tschcick" />
+            <p>"tschick" von Wolfgang Herrndorf</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296092069757039/hans.png?ex=65181779&is=6516c5f9&hm=68c1fd688758400a3c661b3fbe04fe3c887c45d7db7a08aca12f9e68cd56ff77&" 
+            alt="Hannes" />
+            <p>"Hannes" von Rita Falk</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296092380151818/100.png?ex=65181779&is=6516c5f9&hm=98c5ccd134c7abc82b14b4e2c56467804f4f329106ef902c205c7a9756b6330f&" 
+            alt="111 Reasins, to Love flying" />
+            <p>"111 Reasons, to love flying" </p>
+            <p>von Silvia götzen & Florian Knack</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296136156102717/romeo.png?ex=65181784&is=6516c604&hm=41cc11a432325c65f8af54e6467a88059da97c5ec019f2d9478f97365590f517&"
+             alt="romeo" />
+            <p>"Romeo and Juliet" von William Shakespeare</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296136508428318/Screenshot_2023-09-29_143340.png?ex=65181784&is=6516c604&hm=eaa6b5941396325c2c5ec3d686f2ca64e928c969ea6055c3155b78438b85b251&" 
+            alt="dass" />
+            <p>"General Knowledge" von Frederik Holm</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296136785235998/101.png?ex=65181784&is=6516c604&hm=4b7db68f0c572df982190438602f578a916a5932ca27f5445975c05eb0815295&"
+             alt="101" />
+            <p>"101 Things you need to know about Aviation"</p>
+            <p> von Aaron Püttmann </p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296137070460988/dame.png?ex=65181784&is=6516c604&hm=471dcc5cd898a52279a4df1b35749b6664f0044c3d5963ca9d2136850d69972e&" 
+            alt="lady" />
+            <p>"The old lady's visit"</p>
+            <P> von Friedroch Dürrenmatt</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296178296258610/guide.png?ex=6518178e&is=6516c60e&hm=419c6736d72289fc19dbaf8a615b1d2675d2d0b06001bfd7c87cb5b18f9a2072&" 
+            alt="guide" />
+            <p>"Investment Guide" von Robert Kiyosaki</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296178577289266/21.png?ex=6518178e&is=6516c60e&hm=f125333d86372f707156c15a6df1ce435a39a2fa49e9910e967bccda76694d9e&" 
+            alt="21" />
+            <p>"The Busniness of the 21st century" </p>
+            <p>von Robert Kiyosaki</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296178879266926/aktien.png?ex=6518178e&is=6516c60e&hm=b666593a632caa13226b53030ce103ab822eb646678bcbf9c5d0da33f7b9e25e&" 
+            alt="stock" />
+            <p>"Stocks and Etfs" von William Brady</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296179160293417/immo.png?ex=6518178e&is=6516c60e&hm=0e13c3073c3866359c4b4951e934b066ea7f4320828f59d9bae2245f0e1b8b4d&" 
+            alt="beginners" />
+            <p>"Property for beginners"</p>
+            <p>von Manuela Hasselstein</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296199536218122/teens.png?ex=65181793&is=6516c613&hm=1ea0af727359ab453890acb0131f08306db036f01a653db72614eb6f4b70d55b&" 
+            alt="teens" />
+            <p>"For Teens" von Robert Kiyoskai</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296199850799185/iwata.png?ex=65181793&is=6516c613&hm=442a86a02ea39d73a223da1a827879b20f69c44e297f5e0f91a44a0aaba8dd82&"
+             alt="iwata" />
+            <p>"Ask Iwata" von Hobonichi</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296200073084928/itilifent.png?ex=65181793&is=6516c613&hm=051b8da6d2bc2c9d7cb1b622e97f0a0906366de3d91d144030d0d3ae9d14170b&"
+             alt="find" />
+            <p>"Financial Intelligence" </p>
+            <p>von Niclas Lahmer</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157296200337330188/pwoer.png?ex=65181793&is=6516c613&hm=73936ba8d47aefb0a40ba0820b2a6d6afcd361dc788aeb1ced353dfb3e63c7b2&"
+             alt="pwoer" />
+            <p>"Power" von Robert Grenne</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157301978213388370/rich_dad.png?ex=65181cf5&is=6516cb75&hm=e9080b180ab2a5e0530b3b25fa76386f13e4b2e24977ef5cd405b87a5e4a23a3&" 
+            alt="Rich" />
+            <p>"Rich dad Poor dad" von Robert Kiyosaki</p>
+        </div>
+
+        <br>
+        <button onclick="redirectToMenu()">Zurück zum Menü</button>
+    </div>
+
+    <script>
+        function redirectToMenu() {
+            window.location.href = "menu.html";
+        }
+    </script>
+</body>
+</html>

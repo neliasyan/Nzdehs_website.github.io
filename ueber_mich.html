@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Über mich</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        h4 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #weiterleitungText {
+            font-size: 18px;
+            color: green;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mein Lebenslauf</h1>
+    <p>Mein Name ist Nzhdeh Eliasyan. Geboren am 17.06.2001 in Gyumri (Armenien).</p>
+
+    <h4>Berufserfahrung</h4>
+    <p>02.2021 bis 09.2022 TelePizza als Fahrer</p>
+
+
+    <h4>Ausbildung/Schule</h4>
+    <p>08.2022 bis heute Fh Aachen (Informatik - Bachelor of Science (B.Sc.))</p>
+    <p>07.2019 bis 06.2022 Georg-Simon-Ohm-Berufsschule (Fachhochschulereife mit Berufsabschluss als Information technischer Assistent)</p>
+    <p>11.2015 bis 06.2019 Max-Ersnt-Gesamtschule (Mittlerer Schulabschluss)</p>
+    <p>09.2014 bis 06.2026 „FOTO“-SCHULE</p>
+    <p>09.2007 bis 06.2014 Gjumri-Grundschule Nr. 11</p>
+
+   
+    <h4>Hobbys</h4>
+    <p>Lesen, spazieren gehen</p>
+
+    <button id="weiterleitung"><em><strong>Zurück zur Auswahl</strong></em></button>
+
+    <p id="weiterleitungText">Super! Klicken Sie auf Weiter</p>
+
+    <script>
+        document.getElementById("weiterleitung").addEventListener("click", function () {
+            // Hier navigieren Sie zur neuen Seite
+            window.location.href = "menu.html";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meine Kontaktdaten</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            margin-top: 20px;
+            cursor: pointer; /* Fügt einen Mauszeiger hinzu, um anzuzeigen, dass der Text anklickbar ist */
+        }
+
+        .card {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #fff;
+            cursor: pointer; /* Fügt einen Mauszeiger hinzu, um anzuzeigen, dass die Bilder anklickbar sind */
+        }
+
+        address {
+            font-style: normal;
+            font-size: 20px;
+            color: #333;
+            display: none; /* Versteckt die Adresse standardmäßig */
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Meine Kontaktdaten</h1>
+        <p onclick="toggleAddress()"> Hier finden Sie meine Kontaktdaten</p>
+        <address id="address">
+            Nzhdeh Eliasyan<br/>
+            Piccoloministr 627<br/>
+            51067 Köln
+        </address>
+        <br>
+        <!-- Verlinkte Bilder für Anruf, E-Mail und Instagram -->
+        <p>
+            <a href="tel:+491781062376">
+                <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157021295435862139/anruf.png?ex=6517178d&is=6515c60d&hm=62d9b4107ac79564cf9ef4fd617ec97880e2d42a6e853ad6e10985f387a9600b&" alt="Anrufen" />
+            </a>
+            <a href="mailto:neliasyan@gmail.com">
+                <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157021510121291927/email.png?ex=651717c0&is=6515c640&hm=0214c5b10d4a186995102edd48b99548e068a259cff0572d3a314109355bb322&" alt="Email senden" />
+            </a>
+            <a href="https://www.instagram.com/nzhdeh_eliasyan/" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/1041414332472369245/1157022673516376154/6888606.jpg?ex=651718d5&is=6515c755&hm=d0053598fd7b3e97992c4b2d82447cee8c0ea13627d6eede6c1b6104fbe69113&" alt="Instagram" />
+            </a>
+        </p>
+        
+        <!-- Button, um zur "menu.html" Seite zu gelangen -->
+        <button onclick="redirectToMenu()">Zurück zum Menü</button>
+    </div>
+
+    <script>
+        function toggleAddress() {
+            var address = document.getElementById("address");
+            if (address.style.display === "none") {
+                address.style.display = "block";
+            } else {
+                address.style.display = "none";
+            }
+        }
+
+        function redirectToMenu() {
+            window.location.href = "menu.html";
+        }
+    </script>
+</body>
+</html>
