@@ -43,6 +43,22 @@
             background-color: #0056b3;
         }
 
+        .project-button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-button:hover {
+            background-color: #333;
+        }
+
         #weiterleitungText {
             font-size: 20px;
             color: green;
@@ -54,15 +70,21 @@
 <body>
     <div class="container">
         <h2>Aktuelle Projekte</h2>
-        <p>Zitatgenerator mit Html (09.10.2023 in Bearbeitung)</p>
-        <p>DieTaschenrechner mit C++ (07.10.2023) </p>
-        <p>DieVokablenTest mit C++ (06.10.2023) </p>
-        <p>QuizMasterProject mit C++ (04.10.2023)</p>
-        <p>Portfolio Webseite (09.2023)</p>
+        <p>Projekt: Zitatgenerator mit HTML (09.10.2023) <button class="project-button" id="zuProjekt"> Details anzeigen</button></p>
+        <p>Projekt: Die Taschenrechner mit C++ (07.10.2023) </p>
+        <p>Projekt: Die VokablenTest mit C++ (06.10.2023) </p>
+        <p>Projekt: QuizMasterProject mit C++ (04.10.2023)</p>
+        <p>Projekt: Portfolio Webseite (09.2023)</p>
 
         <button id="weiterleitung"><em><strong>Zurück zur Auswahl</strong></em></button>
 
         <p id="weiterleitungText">Super! Klicken Sie auf Weiter</p>
+        <script>
+            document.getElementById("zuProjekt").addEventListener("click", function () {
+                // Hier navigieren Sie zur neuen Seite
+                window.location.href = "Zitat_zufall.html";
+            });
+        </script>
 
         <script>
             document.getElementById("weiterleitung").addEventListener("click", function () {

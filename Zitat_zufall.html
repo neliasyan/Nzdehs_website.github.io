@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Titat des Tages</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+            }
+    
+            .container {
+                padding: 20px;
+            }
+    
+            h2 {
+                color: #007bff;
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                font-size: 20px;
+                color: #555;
+                margin-top: 20px;
+            }
+    
+            button {
+                padding: 14px 28px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 20px;
+                margin-top: 30px;
+                transition: background-color 0.3s ease;
+            }
+    
+            button:hover {
+                background-color: #0056b3;
+            }
+    
+            #weiterleitungText {
+                font-size: 20px;
+                color: green;
+                display: none;
+                margin-top: 20px;
+            }
+        </style>
+<h1><strong><em> Zitat des Tages </em></strong></h1> 
+
+    </head>
+        <body>
+
+          <h3> Bitte drücken Sie auf Button ,um eine Zitat zu generieren</h3>
+
+
+
+         
+            <p id ="zufallsZitat"> </p>
+            <button onclick="zeigtzufall()" >Generiere Zufallszitat </button>
+
+            <script>
+                // array für zitate erstellen 
+                function zeigtzufall(){
+
+
+                    var zitate = [
+                    "Die einzige Möglichkeit, großartige Arbeit zu leisten, besteht darin, zu lieben, was du tust. - Steve Jobs",
+                "Die Zukunft gehört denen, die an die Schönheit ihrer Träume glauben. - Eleanor Roosevelt",
+                "Das Leben ist zu kurz, um sich Sorgen zu machen, was andere Leute über dich denken. - Unknown",
+                "In der Mitte von Schwierigkeiten liegen Möglichkeiten. - Albert Einstein",
+                "Das Glück besteht darin, zu erkennen, wie glücklich man bereits ist. - Unknown",
+                "Sei die Veränderung, die du in der Welt sehen möchtest. - Mahatma Gandhi",
+                "Das Leben ist kurz, und es liegt an uns, es süß zu machen.  - Sarah Louise Delany" ,
+                "Träume groß und fürchte dich nicht, zu scheitern. Ein großer Traum kann dich weit bringen.- Chanda Kochhar",
+                "Erfolg ist die Fähigkeit, von einem Misserfolg zum nächsten zu gehen, ohne den Enthusiasmus zu verlieren. - Winston Churchill",
+                "Die Zukunft gehört denen, die an die Schönheit ihrer Träume glauben. - Eleanor Roosevelt",
+                "In der Mitte von Schwierigkeiten liegen Möglichkeiten. - Albert Einstein",
+                "Das Glück besteht darin, zu erkennen, wie glücklich man bereits ist. - Unbekannt",
+                "Sei die Veränderung, die du in der Welt sehen möchtest. - Mahatma Gandhi",
+                "Der Weg zum Erfolg führt immer über die Bereitschaft, Risiken einzugehen.- John D. Rockefeller",
+                "Die besten und schönsten Dinge auf dieser Welt kann man weder sehen noch berühren, sondern nur im Herzen spüren. - Helen Keller"
+
+
+            ];
+// Zitate gererieren
+            var zufallIndex= Math.floor(Math.random()* zitate.length);
+            var zufallsZitat = zitate[zufallIndex];
+
+            // zitat ausgeben
+            document.getElementById("zufallsZitat").innerHTML = zufallsZitat;
+                    
+                }
+                </script>
+        </body>
+    
+    </html>
+
+            
